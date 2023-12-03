@@ -1,1 +1,7 @@
-<div><input /><button>Search</button> <button>Reset</button></div>
+<div>
+  <form (ngSubmit)="searchMovie()">
+    <input [(ngModel)]="title" name="title" placeholder="Enter movie title" />
+    <button type="submit">Search</button>
+    <button type="button" (click)="resetForm()">Reset</button>
+  </form>
+</div>

@@ -10,6 +10,8 @@ import { MovieComponent } from './components/movie/movie.component';
 import { ReviewComponent } from './components/review/review.component';
 import { PosterComponent } from './components/poster/poster.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SearchComponent,
     MovieComponent,
     ReviewComponent,
-    PosterComponent
+    PosterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

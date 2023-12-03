@@ -1,1 +1,3 @@
-<p>poster works!</p>
+<div *ngIf="movieData">
+  <img [src]="movieData.poster" alt="Movie Poster" />
+</div>
