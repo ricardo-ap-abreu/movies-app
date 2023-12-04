@@ -9,14 +9,15 @@ import { MovieDataService } from 'src/app/services/movie-data.service';
 })
 export class ReviewComponent implements OnInit {
   movieData: Movie | undefined;
-
   constructor(private movieDataService: MovieDataService) {}
 
   ngOnInit() {
-    console.log('ReviewComponent ngOnInit called');
     this.movieDataService.movieData$.subscribe((data) => {
-      console.log('ReviewComponent received movie data:', data);
       this.movieData = data;
     });
+  }
+
+  getStarRating(): string {
+    return this.movieData ? this.movieData.getStarRating() : 'N/A';
   }
 }

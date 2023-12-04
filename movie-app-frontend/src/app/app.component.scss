@@ -1,12 +1,8 @@
-*, 
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
 }
-body{
-    font-size: 100%;
-    list-style-type: none;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }

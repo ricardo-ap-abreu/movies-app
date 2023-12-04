@@ -12,10 +12,12 @@ export class PosterComponent implements OnInit {
   constructor(private movieDataService: MovieDataService) {}
 
   ngOnInit() {
-    console.log('PosterComponent ngOnInit called');
     this.movieDataService.movieData$.subscribe((data) => {
-      console.log('PosterComponent received movie data:', data);
       this.movieData = data;
     });
+  }
+
+  getPoster(): string {
+    return this.movieData ? this.movieData.getPoster() : 'N/A';
   }
 }

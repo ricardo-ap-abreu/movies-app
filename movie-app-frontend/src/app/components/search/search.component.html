@@ -1,7 +1,11 @@
 <div>
   <form (ngSubmit)="searchMovie()">
-    <input [(ngModel)]="title" name="title" placeholder="Enter movie title" />
-    <button type="submit">Search</button>
-    <button type="button" (click)="resetForm()">Reset</button>
+    <ui5-input
+      [(ngModel)]="title"
+      name="title"
+      placeholder="Enter movie title"
+    />
+    <ui5-button type="Submit">Search</ui5-button>
+    <ui5-button type="Button" (click)="resetForm()">Reset</ui5-button>
   </form>
 </div>

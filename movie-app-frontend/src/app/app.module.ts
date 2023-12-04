@@ -12,6 +12,9 @@ import { PosterComponent } from './components/poster/poster.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './pages/home/home.component';
+import { Ui5WebcomponentsModule } from '@ui5/webcomponents-ngx';
+import { Ui5WebcomponentsIconsModule } from '@ui5/webcomponents-ngx/icons';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     MovieComponent,
     ReviewComponent,
     PosterComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    Ui5WebcomponentsModule,
+    Ui5WebcomponentsIconsModule.forRoot(['sap-icons']),
   ],
   providers: [],
   bootstrap: [AppComponent],

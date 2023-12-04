@@ -9,7 +9,7 @@ import { SearchMovieService } from 'src/app/services/search-movie.service';
 })
 export class SearchComponent {
   title: string = '';
-  movieData: Movie = new Movie('', '', '', '', '', '');
+  movieData: Movie | undefined;
   constructor(private searchMovieService: SearchMovieService) {}
 
   searchMovie() {

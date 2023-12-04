@@ -1,0 +1,25 @@
+main {
+  margin: 0 auto;
+  width: 80vw;
+  min-height: 80vh;
+  section.search-bar {
+    text-align: center;
+    padding: 1vh 0;
+    input {
+      padding: 1vh;
+    }
+  }
+  article {
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: 70% auto;
+    padding: 1vh 0;
+    .movie-info {
+      margin: 1vh 0;
+    }
+    .poster {
+      margin: 0 auto;
+    }
+  }
+}
